@@ -20,11 +20,11 @@ const Header = () => {
         </Link>
 
         {/* Nav Items Section */}
-        <ul className='items-center hidden space-x-8 lg:flex font-semibold'>
+        <ul className='items-center hidden space-x-8 lg:flex'>
           <li>
             <NavLink
               to='/'
-              className={({ isActive }) => (isActive ? 'text-blue-600' : '')}
+              className={({ isActive }) => (isActive ? 'active' : 'default')}
             >
               Home
             </NavLink>
@@ -32,7 +32,7 @@ const Header = () => {
           <li>
             <NavLink
               to='/books'
-              className={({ isActive }) => (isActive ? 'text-blue-600' : '')}
+              className={({ isActive }) => (isActive ? 'active' : 'default')}
             >
               Books
             </NavLink>
@@ -40,7 +40,7 @@ const Header = () => {
           <li>
             <NavLink
               to='/about'
-              className={({ isActive }) => (isActive ? 'text-blue-600' : '')}
+              className={({ isActive }) => (isActive ? 'active' : 'default')}
             >
               About us
             </NavLink>
@@ -56,7 +56,6 @@ const Header = () => {
           >
             <Bars3BottomRightIcon className='w-5 text-gray-600' />
           </button>
-          
           {isMenuOpen && (
             <div className='absolute top-0 left-0 w-full z-10'>
               <div className='p-5 bg-white border rounded shadow-sm'>
@@ -116,4 +115,4 @@ const Header = () => {
   )
 }
 
-export default Header;
+export default Header

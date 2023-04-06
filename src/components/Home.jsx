@@ -1,9 +1,6 @@
-import React from 'react';
-import animation from '../assets/27637-welcome.json';
-
-
+import React from 'react'
 import Lottie from 'lottie-react'
-
+import reader from '../assets/27637-welcome.json'
 import { ShoppingCartIcon } from '@heroicons/react/24/solid'
 import { Link } from 'react-router-dom'
 
@@ -44,12 +41,11 @@ const Home = () => {
       {/* Lottie Animation */}
       <div className='relative lg:w-1/2 '>
         <div className='w-full lg:w-4/5 lg:ml-auto h-56  sm:h-96'>
-          <Lottie animationData={animation} loop={true} />
+          <Lottie animationData={reader} loop={true} />
         </div>
       </div>
     </div>
   )
 }
 
-export default Home
-
+export default Home;
